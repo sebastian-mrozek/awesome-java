@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Awesome-java : A curated list of awesome Java frameworks, libraries and software. Inspired by awesome-python." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Awesome-java</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/java-lang/awesome-java">View on GitHub</a>
+
+          <h1 id="project_title">Awesome-java</h1>
+          <h2 id="project_tagline">A curated list of awesome Java frameworks, libraries and software. Inspired by awesome-python.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/java-lang/awesome-java/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/java-lang/awesome-java/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="awesome-java" class="anchor" href="#awesome-java"><span class="octicon octicon-link"></span></a>Awesome Java</h1>
+
+<p>A curated list of awesome Java frameworks, libraries and software. Inspired by <a href="https://github.com/vinta/awesome-python">awesome-python</a>.</p>
+
+<ul>
+<li>
+<a href="#awesome-java">Awesome Java</a>
+
+<ul>
+<li><a href="#build-tool">Build Tool</a></li>
+<li><a href="#code-analysis">Code Analysis</a></li>
+<li><a href="#compiler-compiler">Compiler-compiler</a></li>
+<li><a href="#continuous-integration">Continuous Integration</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#date-and-time">Date and Time</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#distributed-applications">Distributed Applications</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#game-development">Game Development</a></li>
+<li><a href="#high-performance">High Performance</a></li>
+<li><a href="#ide">IDE</a></li>
+<li><a href="#jvm-and-jdk">JVM and JDK</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#messaging">Messaging</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#orm">ORM</a></li>
+<li><a href="#pdf">PDF</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#science">Science</a></li>
+<li><a href="#server">Server</a></li>
+<li><a href="#template-engine">Template Engine</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#utility">Utility</a></li>
+<li><a href="#visualization">Visualization</a></li>
+<li><a href="#web-crawling">Web Crawling</a></li>
+<li><a href="#web-frameworks">Web Frameworks</a></li>
+<li><a href="#rest-frameworks">REST Frameworks</a></li>
+</ul>
+</li>
+<li>
+<a href="#resources">Resources</a>
+
+<ul>
+<li><a href="#communities">Communities</a></li>
+<li><a href="#influential-books">Influential Books</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#twitter">Twitter</a></li>
+<li><a href="#websites">Websites</a></li>
+</ul>
+</li>
+<li><a href="#contributing">Contributing</a></li>
+</ul><h2>
+<a name="build-tool" class="anchor" href="#build-tool"><span class="octicon octicon-link"></span></a>Build Tool</h2>
+
+<p><em>Tools which handle the buildcycle of an application.</em></p>
+
+<ul>
+<li>
+<a href="http://maven.apache.org/">Apache Maven</a> - Declarative build and dependency management which favors convention over configuration. It's preferable to Apache Ant which uses a rather procedural approach and can be rather difficult to maintain.</li>
+<li>
+<a href="http://www.gradle.org/">Gradle</a> - Incremental builds which are programmed via Groovy instead of declaring XML. Works well with Maven's dependency management and treats Ant scripts as first-class citizens.</li>
+</ul><h2>
+<a name="code-analysis" class="anchor" href="#code-analysis"><span class="octicon octicon-link"></span></a>Code Analysis</h2>
+
+<p><em>Tools that provide metrics and quality measurements of static code.</em></p>
+
+<ul>
+<li>
+<a href="http://www.sonarqube.org/">SonarQube</a> - Inspection tool for code quality. It integrates with several external tools like Gradle, Jira and Jenkins and provides an overview of the metrics over time.</li>
+<li>
+<a href="http://findbugs.sourceforge.net/">FindBugs</a> - Static analysis of bytecode to find potential bugs.</li>
+<li>
+<a href="http://metrics.codahale.com/">Metrics</a> - Measures the behavior of critical components.</li>
+</ul><h2>
+<a name="compiler-compiler" class="anchor" href="#compiler-compiler"><span class="octicon octicon-link"></span></a>Compiler-compiler</h2>
+
+<p><em>Tools that create parsers, interpreters or compilers.</em></p>
+
+<ul>
+<li>
+<a href="http://www.antlr.org/">ANTLR</a> - Complex full-featured framework for top-down parsing.</li>
+<li>
+<a href="https://javacc.java.net/">JavaCC</a> - More specific and slightly easier to learn. Has syntactic lookahead.</li>
+</ul><h2>
+<a name="continuous-integration" class="anchor" href="#continuous-integration"><span class="octicon octicon-link"></span></a>Continuous Integration</h2>
+
+<p><em>Tools which support continuously building, testing and releasing applications.</em></p>
+
+<ul>
+<li>
+<a href="http://jenkins-ci.org/">Jenkins</a> - Provides server-based services. Often seen as the successor to Hudson, although it is still actively developed.</li>
+</ul><h2>
+<a name="database" class="anchor" href="#database"><span class="octicon octicon-link"></span></a>Database</h2>
+
+<p><em>Everything which simplifies interactions with the database.</em></p>
+
+<ul>
+<li>
+<a href="http://www.jooq.org/">jOOQ</a> - Generates typesafe code based on SQL schema.</li>
+<li>
+<a href="http://www.liquibase.org/">Liquibase</a> - Source control for your database which can be embedded.</li>
+</ul><h2>
+<a name="date-and-time" class="anchor" href="#date-and-time"><span class="octicon octicon-link"></span></a>Date and Time</h2>
+
+<p><em>Libraries related to date and time.</em></p>
+
+<ul>
+<li>
+<a href="http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html">Java 8 SE: Date and Time API</a> - Basically, it incorporates Joda-Time.</li>
+<li>
+<a href="http://joda-time.sourceforge.net/">Joda-Time</a> - De facto standard date/time-library before Java 8.</li>
+</ul><h2>
+<a name="dependency-injection" class="anchor" href="#dependency-injection"><span class="octicon octicon-link"></span></a>Dependency Injection</h2>
+
+<p><em>Libraries that help to realize the <a href="http://en.wikipedia.org/wiki/Inversion_of_control">Inversion of Control</a> paradigm.</em></p>
+
+<ul>
+<li>
+<a href="http://square.github.io/dagger/">Dagger</a> - Compile-time injection framework without reflection, mainly for Android.</li>
+<li>
+<a href="http://de.wikipedia.org/wiki/Google_Guice">Google Guice</a> - Lightweight but powerful framework.</li>
+<li>
+<a href="http://spring.io/">Spring</a> - Only Spring Context is needed for injections.</li>
+<li>
+<a href="http://docs.jboss.org/weld/reference/latest/en-US/html_single/">Weld</a> - CDI reference implementation.</li>
+</ul><h2>
+<a name="development" class="anchor" href="#development"><span class="octicon octicon-link"></span></a>Development</h2>
+
+<p><em>Integrated environments that augment the process of development at a fundamental level, e.g. classloading.</em></p>
+
+<ul>
+<li>
+<a href="http://ssw.jku.at/dcevm/">DCEVM</a> - Modification of the JVM that allows unlimited redefinition of loaded classes at runtime.</li>
+<li>
+<a href="http://zeroturnaround.com/software/jrebel/">JRebel</a> - Instantly reloads code and configuration changes without redeploys.</li>
+</ul><h2>
+<a name="distributed-applications" class="anchor" href="#distributed-applications"><span class="octicon octicon-link"></span></a>Distributed Applications</h2>
+
+<p><em>Libraries and frameworks used to ease writing distributed and fault-tolerant applications.</em></p>
+
+<ul>
+<li>
+<a href="http://akka.io">Akka</a> - Toolkit and runtime for building highly concurrent, distributed, and fault tolerant event-driven applications.</li>
+<li>
+<a href="http://www.jgroups.org/">JGroups</a> - Toolkit for reliable messaging and creating clusters whose nodes can send messages to each other.</li>
+<li>
+<a href="http://zookeeper.apache.org/">Apache ZooKeeper</a> - Coordination service with distributed configuration, synchronization, and naming registry for large distributed systems.</li>
+</ul><h2>
+<a name="gui" class="anchor" href="#gui"><span class="octicon octicon-link"></span></a>GUI</h2>
+
+<p><em>Libraries to create modern graphical user interfaces.</em></p>
+
+<ul>
+<li>
+<a href="http://www.oracle.com/technetwork/java/javase/overview/javafx-overview-2158620.html">JavaFX</a> - The successor of Swing.</li>
+<li>
+<a href="http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html">Scene Builder</a> - Visual layout tool for JavaFX applications.</li>
+</ul><h2>
+<a name="game-development" class="anchor" href="#game-development"><span class="octicon octicon-link"></span></a>Game Development</h2>
+
+<p><em>Frameworks that support the development of games.</em></p>
+
+<ul>
+<li>
+<a href="http://jmonkeyengine.org/">jMonkeyEngine</a> - Game engine for modern 3D development.</li>
+<li>
+<a href="http://lwjgl.org/">LWJGL</a> - Robust framework that abstracts libraries like OpenGL/CL/AL.</li>
+<li>
+<a href="http://libgdx.badlogicgames.com/">libGDX</a> - All-round cross-platform, high-level framework.</li>
+</ul><h2>
+<a name="high-performance" class="anchor" href="#high-performance"><span class="octicon octicon-link"></span></a>High Performance</h2>
+
+<p><em>Everything about high performance computation, from collections to specific libraries.</em></p>
+
+<ul>
+<li>
+<a href="http://trove.starlight-systems.com/">Trove</a> - Primitive collections.</li>
+<li>
+<a href="http://labs.carrotsearch.com/hppc.html">HPPC</a> - Primitive collections.</li>
+<li>
+<a href="http://lmax-exchange.github.io/disruptor/">Disruptor</a> - Inter-thread messaging library.</li>
+<li>
+<a href="http://javolution.org/">Javalution</a> - Library for real-time and embedded systems.</li>
+</ul><h2>
+<a name="ide" class="anchor" href="#ide"><span class="octicon octicon-link"></span></a>IDE</h2>
+
+<p><em>Integrated development environments that try to simplify several aspects of development.</em></p>
+
+<ul>
+<li>
+<a href="https://netbeans.org/">NetBeans</a> - Provides integration for several  Java SE and EE features starting with database access and servers to HTML5 and AngularJS.</li>
+<li>
+<a href="http://www.eclipse.org/">Eclipse</a> - Does a lot of things in the background. Noteworthy are its large amount of plugins.</li>
+<li>
+<a href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a> - Supports a lot of JVM languages and provides good options for Android development. The commercial edition targets the enterprise sector.</li>
+</ul><h2>
+<a name="jvm-and-jdk" class="anchor" href="#jvm-and-jdk"><span class="octicon octicon-link"></span></a>JVM and JDK</h2>
+
+<p><em>Various implementations of the JVM/JDK.</em></p>
+
+<ul>
+<li>
+<a href="http://openjdk.java.net/groups/hotspot/">HotSpot</a> - Official JVM.</li>
+<li>
+<a href="https://jdk9.java.net/">JDK 9</a> - Early access releases of JDK 9.</li>
+<li>
+<a href="http://openjdk.java.net/">OpenJDK</a> - Open source implementation.</li>
+</ul><h2>
+<a name="json" class="anchor" href="#json"><span class="octicon octicon-link"></span></a>JSON</h2>
+
+<p><em>Libraries that simplify JSON processing.</em></p>
+
+<ul>
+<li>
+<a href="https://code.google.com/p/google-gson/">Google Gson</a> - Serializes Java objects to JSON and vice versa. Good performance with on-the-fly usage. </li>
+<li>
+<a href="http://wiki.fasterxml.com/JacksonHome">Jackson</a> - Similar to GSON but has performance gains if you need to instantiate the library more often.</li>
+</ul><h2>
+<a name="logging" class="anchor" href="#logging"><span class="octicon octicon-link"></span></a>Logging</h2>
+
+<p><em>Libraries that log the behavior of an application.</em></p>
+
+<ul>
+<li>
+<a href="http://logging.apache.org/log4j/">Apache Log4j 2</a> - Complete rewrite of the previous version. Now has a powerful plugin and configuration architecture.</li>
+<li>
+<a href="http://logback.qos.ch/">Logback</a> - Founded by the same developer as Log4j and proves to be a robust logging library with interesting configuration options via Groovy.</li>
+<li>
+<a href="http://www.slf4j.org/">SLF4J</a> - Abstraction layer which is to be used with an implementation.</li>
+</ul><h2>
+<a name="machine-learning" class="anchor" href="#machine-learning"><span class="octicon octicon-link"></span></a>Machine Learning</h2>
+
+<p><em>Tools that provide specific statistical algorithms which allow to learn from data.</em></p>
+
+<ul>
+<li>
+<a href="http://hadoop.apache.org/">Apache Hadoop</a> - Open-source software framework for storage and large-scale processing of data-sets on clusters of commodity hardware.</li>
+<li>
+<a href="https://mahout.apache.org/">Apache Mahout</a> - Scalable algorithms focused on collaborative filtering, clustering and classification.</li>
+<li>
+<a href="http://spark.apache.org/">Apache Spark</a> - Open-source data analytics cluster computing framework.</li>
+<li>
+<a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a> - Collection of algorithms for data mining tasks ranging from pre-processing to visualization.</li>
+</ul><h2>
+<a name="messaging" class="anchor" href="#messaging"><span class="octicon octicon-link"></span></a>Messaging</h2>
+
+<p><em>Tools that help sending messages between clients to ensure protocol independency.</em></p>
+
+<ul>
+<li>
+<a href="http://activemq.apache.org/">Apache ActiveMQ</a> - Open-source message broker that implements JMS and converts synchronous to asynchronous communication.</li>
+<li>
+<a href="http://kafka.apache.org/">Apache Kafka</a> - High-throughput distributed messaging system.</li>
+<li>
+<a href="http://hornetq.jboss.org/">JBoss HornetQ</a> - Clear, concise, modular and made to be embedded.</li>
+</ul><h2>
+<a name="miscellaneous" class="anchor" href="#miscellaneous"><span class="octicon octicon-link"></span></a>Miscellaneous</h2>
+
+<p><em>Everything else.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/google/jimfs">Jimfs</a> - In-memory file system.</li>
+<li>
+<a href="http://projectlombok.org/">Lombok</a> - Code-generator which aims to reduce the verbosity of Java.</li>
+<li>
+<a href="http://www.robovm.org/">RoboVM</a> - Write native iOS apps in Java.</li>
+</ul><h2>
+<a name="natural-language-processing" class="anchor" href="#natural-language-processing"><span class="octicon octicon-link"></span></a>Natural Language Processing</h2>
+
+<p><em>Libraries that specialize on processing text.</em></p>
+
+<ul>
+<li>
+<a href="https://opennlp.apache.org/">Apache OpenNLP</a> - Toolkit for common tasks like tokenization.</li>
+<li>
+<a href="http://alias-i.com/lingpipe/">LingPipe</a> - Toolkit for a variety of tasks ranging from POS tagging to sentiment analysis.</li>
+<li>
+<a href="http://mallet.cs.umass.edu/">Mallet</a> - Statistical natural language processing, document classification, clustering, topic modeling, etc.</li>
+</ul><h2>
+<a name="orm" class="anchor" href="#orm"><span class="octicon octicon-link"></span></a>ORM</h2>
+
+<p><em>APIs which handle the persistence of objects.</em></p>
+
+<ul>
+<li>
+<a href="https://www.eclipse.org/eclipselink/">EclipseLink</a> - Supports a number of persistence standards: JPA, JAXB, JCA and SDO.</li>
+<li>
+<a href="http://hibernate.org/orm/">Hibernate</a> - Robust and widely used with an active community.</li>
+</ul><h2>
+<a name="pdf" class="anchor" href="#pdf"><span class="octicon octicon-link"></span></a>PDF</h2>
+
+<p><em>Everything that helps with the creation of PDF files.</em></p>
+
+<ul>
+<li>
+<a href="http://xmlgraphics.apache.org/fop/">Apache FOP</a> - Creates PDF from XSL-FO.</li>
+<li>
+<a href="http://pdfbox.apache.org/">Apache PDFBox</a> - Toolbox for creating and manipulating PDF.</li>
+<li>
+<a href="http://community.jaspersoft.com/project/jasperreports-library">JasperReports</a> - Complex reporting engine.</li>
+<li>
+<a href="http://dynamicreports.org/">DynamicReports</a> - Simplifies JasperReports.</li>
+<li>
+<a href="http://itextpdf.com/">iText</a> - Easy to use PDF library which creates PDF files programmatically but requires a license for commercial purposes.</li>
+</ul><h2>
+<a name="security" class="anchor" href="#security"><span class="octicon octicon-link"></span></a>Security</h2>
+
+<p><em>Libraries that handle security, authentication, authorization or session management.</em></p>
+
+<ul>
+<li>
+<a href="http://shiro.apache.org/">Apache Shiro</a> - Performs authentication, authorization, cryptography and session management.</li>
+<li>
+<a href="http://keycloak.jboss.org/">Keycloak</a> - Integrated SSO and IDM for browser apps and RESTful web services. Currently in beta but looks very promising.</li>
+<li>
+<a href="http://picketlink.org/">PicketLink</a> - PicketLink is an umbrella project for security and identity management for Java applications.</li>
+<li>
+<a href="http://projects.spring.io/spring-security/">Spring Security</a> - Focuses on authentication/authorization and protects against several attack vectors.</li>
+</ul><h2>
+<a name="science" class="anchor" href="#science"><span class="octicon octicon-link"></span></a>Science</h2>
+
+<p><em>Libraries for scientific computing and analysis.</em></p>
+
+<ul>
+<li>
+<a href="http://www.jscience.org/">JScience</a> - Comprehensive framework of science related libraries.</li>
+<li>
+<a href="https://sites.google.com/site/piotrwendykier/software/jtransforms">JTransforms</a> - Multithread FFT library.</li>
+<li>
+<a href="https://sites.google.com/site/piotrwendykier/software/parallelcolt">Parallel Colt</a> - Multithread high performance scientific and technical computing.</li>
+<li>
+<a href="http://jwork.org/scavis/">SCaVis</a> - Environment for scientific computation, data analysis and data visualization.</li>
+</ul><h2>
+<a name="server" class="anchor" href="#server"><span class="octicon octicon-link"></span></a>Server</h2>
+
+<p><em>Servers which are specifically used to deploy applications.</em></p>
+
+<ul>
+<li>
+<a href="https://glassfish.java.net/">GlassFish</a> - Open source reference implementation for Java EE sponsored by Oracle.</li>
+<li>
+<a href="http://www.wildfly.org/">WildFly</a> - Formerly known as JBoss and developed by Red Hat with extensive Java EE support.</li>
+<li>
+<a href="http://www.eclipse.org/jetty/">Jetty</a> - Lightweight, small server, often embedded in projects.</li>
+<li>
+<a href="http://tomcat.apache.org/">Apache Tomcat</a> - Robust all-round server for Servlet and JSP.</li>
+<li>
+<a href="http://tomee.apache.org/">Apache TomEE</a> - Tomcat plus Java EE.</li>
+</ul><h2>
+<a name="template-engine" class="anchor" href="#template-engine"><span class="octicon octicon-link"></span></a>Template Engine</h2>
+
+<p><em>Tools which substitute expressions in a template.</em></p>
+
+<ul>
+<li>
+<a href="http://velocity.apache.org/">Apache Velocity</a> - Templates for HTML pages, emails or source code generation in general.</li>
+<li>
+<a href="http://freemarker.org/">FreeMarker</a> - General templating engine without any heavyweight or opinionated dependencies.</li>
+<li>
+<a href="https://jsp.java.net/">JavaServer Pages</a> - Aged templating for websites with custom tag libraries.</li>
+<li>
+<a href="http://www.thymeleaf.org/">Thymeleaf</a> - Aims to be a substitute for JSP and works for XML files in general.</li>
+</ul><h2>
+<a name="testing" class="anchor" href="#testing"><span class="octicon octicon-link"></span></a>Testing</h2>
+
+<p><em>Tools that test from object to interface level including performance and other benchmarks.</em></p>
+
+<ul>
+<li>
+<a href="http://joel-costigliola.github.io/assertj/">AssertJ</a> - Fluent assertions.</li>
+<li>
+<a href="http://jmeter.apache.org/">Apache JMeter</a> - Functional testing and performance measurements.</li>
+<li>
+<a href="http://arquillian.org/">Arquillian</a> - Integration and functional testing platform with integration of Java EE containers.</li>
+<li>
+<a href="https://code.google.com/p/caliper/">Calipher</a> - Microbenchmarking framework.</li>
+<li>
+<a href="https://code.google.com/p/fest/">FEST</a> - Collection of testing libraries.</li>
+<li>
+<a href="http://hamcrest.org/JavaHamcrest/">Hamcrest</a> - Framework for writing declarative assertion matchers.</li>
+<li>
+<a href="http://openjdk.java.net/projects/code-tools/jmh/">JMH</a> - Microbenchmarking.</li>
+<li>
+<a href="http://junit.org/">JUnit</a> - Testing framework.</li>
+<li>
+<a href="http://code.google.com/p/mockito/">Mockito</a> - Creation of test double objects in automated unit tests for the purpose of TDD or BDD.</li>
+<li>
+<a href="http://docs.seleniumhq.org/">Selenium</a> - Portable software testing framework for web applications.</li>
+<li>
+<a href="http://testng.org/">TestNG</a> - Testing framework.</li>
+<li>
+<a href="http://visualvm.java.net/">VisualVM</a> - Visual interface for viewing detailed information about Java applications while they are running on a JVM.</li>
+</ul><h2>
+<a name="utility" class="anchor" href="#utility"><span class="octicon octicon-link"></span></a>Utility</h2>
+
+<p><em>Libraries which provide unspecific functionality, e.g. optimized datastructures.</em></p>
+
+<ul>
+<li>
+<a href="http://commons.apache.org/">Apache Commons</a> - Provides different general purpose functions like configuration, validation, collections, file upload or XML processing.</li>
+<li>
+<a href="http://code.google.com/p/guava-libraries/">Google Guava</a> - Collections, caching, primitives support, concurrency libraries, common annotations, string processing, I/O, and so forth.</li>
+</ul><h2>
+<a name="visualization" class="anchor" href="#visualization"><span class="octicon octicon-link"></span></a>Visualization</h2>
+
+<p><em>Libraries or frameworks which allow you to visualize data.</em></p>
+
+<ul>
+<li>
+<a href="https://www.processing.org/">Processing</a> - A project deeply rooted in visual art which allows you to program the visualization of data.</li>
+</ul><h2>
+<a name="web-crawling" class="anchor" href="#web-crawling"><span class="octicon octicon-link"></span></a>Web Crawling</h2>
+
+<p><em>Libraries that analyze the content of websites.</em></p>
+
+<ul>
+<li>
+<a href="http://nutch.apache.org/">Apache Nutch</a> - Highly extensible, highly scalable Web crawler for production environment.</li>
+<li>
+<a href="https://code.google.com/p/crawler4j/">Crawler4j</a> - Simple lightweight alternative.</li>
+<li>
+<a href="http://jsoup.org/">jsoup</a> - Scrapes, parses, manipulates and cleans HTML.</li>
+</ul><h2>
+<a name="web-frameworks" class="anchor" href="#web-frameworks"><span class="octicon octicon-link"></span></a>Web Frameworks</h2>
+
+<p><em>Frameworks that handle the communication between the layers of an web application.</em></p>
+
+<ul>
+<li>
+<a href="http://tapestry.apache.org/">Apache Tapestry</a> - Component oriented framework for creating dynamic, robust, highly scalable web applications in Java.</li>
+<li>
+<a href="http://projects.spring.io/spring-framework/">Spring</a> - Aims to simplify the development with Java EE and provides packages for dependency injection and aspect-oriented programming.</li>
+<li>
+<a href="http://projects.spring.io/spring-boot/">Spring Boot</a> - Microframework which simplifies the development of new Spring applications.</li>
+<li>
+<a href="https://vaadin.com/">Vaadin</a> - Event-driven framework build on top of GWT. Uses server-side architecture with Ajax on the client-side. </li>
+<li>
+<a href="http://www.gwtproject.org/">Google Web Toolkit</a> - Toolbox which includes a Java-to-JavaScript compiler for client-side code, XML parser, API for RPC, JUnit integration, internationalization support and widgets for the GUI.</li>
+<li>
+<a href="http://wicket.apache.org/">Apache Wicket</a> - Component-based web application framework similar to Tapestry with a stateful GUI.</li>
+<li>
+<a href="http://www.playframework.com/">Play</a> - Uses convention over configuration, hot code reloading and display of errors in the browser.</li>
+<li>
+<a href="http://primefaces.org/">PrimeFaces</a> - JSF framework which has a free and a commercial version with support. Provides several frontend components.</li>
+<li>
+<a href="http://www.sparkjava.com/why.html">Spark</a> - Unique framework which focuses not on complex MVC patterns but on rapid development.</li>
+</ul><h2>
+<a name="rest-frameworks" class="anchor" href="#rest-frameworks"><span class="octicon octicon-link"></span></a>REST Frameworks</h2>
+
+<p><em>Frameworks specifically for creating RESTful services.</em></p>
+
+<ul>
+<li>
+<a href="https://dropwizard.github.io/dropwizard/">Dropwizard</a> - Opinionated framework for setting up modern web applications, includes Jetty, Jackson, Jersey and Metrics.</li>
+<li>
+<a href="https://jersey.java.net/">Jersey</a> - JAX-RS reference implementation.</li>
+<li>
+<a href="http://resteasy.jboss.org/">RESTEasy</a> - Fully certified and portable implementation of the JAX-RS specification.</li>
+</ul><h1>
+<a name="resources" class="anchor" href="#resources"><span class="octicon octicon-link"></span></a>Resources</h1>
+
+<h2>
+<a name="communities" class="anchor" href="#communities"><span class="octicon octicon-link"></span></a>Communities</h2>
+
+<p><em>Active discussions.</em></p>
+
+<ul>
+<li>
+<a href="http://www.reddit.com/r/java">r/java</a> - Subreddit for the Java community.</li>
+<li>
+<a href="http://stackoverflow.com/questions/tagged/java">stackoverflow</a> - Question/answer platform.</li>
+</ul><h2>
+<a name="influential-books" class="anchor" href="#influential-books"><span class="octicon octicon-link"></span></a>Influential Books</h2>
+
+<p><em>Books about Java that had a high impact and are still worth reading.</em></p>
+
+<ul>
+<li><a href="http://www.amazon.com/Effective-Java-Edition-Joshua-Bloch/dp/0321356683">Effective Java (2nd Edition)</a></li>
+<li><a href="http://www.amazon.com/Java-Concurrency-Practice-Brian-Goetz/dp/0321349601">Java Concurrency in Practice</a></li>
+<li><a href="http://www.amazon.com/Thinking-Java-Edition-Bruce-Eckel/dp/0131872486">Thinking in Java</a></li>
+</ul><h2>
+<a name="podcasts" class="anchor" href="#podcasts"><span class="octicon octicon-link"></span></a>Podcasts</h2>
+
+<p><em>Something to listen to while programming.</em></p>
+
+<ul>
+<li><a href="http://www.javaposse.com/">The Java Posse</a></li>
+</ul><h2>
+<a name="twitter" class="anchor" href="#twitter"><span class="octicon octicon-link"></span></a>Twitter</h2>
+
+<p><em>People to follow.</em></p>
+
+<ul>
+<li><a href="https://twitter.com/AdamBien/">Adam Bien</a></li>
+<li><a href="https://twitter.com/agoncal/">Antonio Goncalves</a></li>
+<li><a href="https://twitter.com/arungupta/">Arun Gupta</a></li>
+<li><a href="https://twitter.com/edburns">Ed Burns</a></li>
+<li><a href="https://twitter.com/java/">Java</a></li>
+<li><a href="https://twitter.com/Java_EE/">Java EE</a></li>
+<li><a href="https://twitter.com/javanetbuzz/">Java.net</a></li>
+<li><a href="https://twitter.com/Oraclejavamag">Java Magazine</a></li>
+<li><a href="https://twitter.com/mreinhold">Mark Reinhold</a></li>
+<li><a href="https://twitter.com/OpenJDK">OpenJDK</a></li>
+<li><a href="https://twitter.com/plmuir/">Pete Muir</a></li>
+<li><a href="https://twitter.com/reza_rahman">Reza Rahman</a></li>
+<li><a href="https://twitter.com/sjmaple">Simon Maple</a></li>
+<li><a href="https://twitter.com/kablosna">Tim Boudreau</a></li>
+</ul><h2>
+<a name="websites" class="anchor" href="#websites"><span class="octicon octicon-link"></span></a>Websites</h2>
+
+<p><em>Sites to read.</em></p>
+
+<ul>
+<li><a href="http://java.net/">Java.net</a></li>
+<li><a href="http://www.javaworld.com/">JavaWorld</a></li>
+<li><a href="http://java.dzone.com/">Javalobby</a></li>
+</ul><h1>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h1>
+
+<p>Contributions are very welcome!</p>
+
+<p>Please have a look at <a href="https://github.com/akullpp/awesome-java/blob/master/CONTRIBUTING.md">CONTRIBUTING</a> for guidelines. </p>
+
+<p>Topics which have no libraries as of yet are located in <a href="https://github.com/akullpp/awesome-java/blob/master/TOPICS.md">TOPICS</a>.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Awesome-java maintained by <a href="https://github.com/java-lang">java-lang</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
