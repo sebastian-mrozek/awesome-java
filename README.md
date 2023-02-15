@@ -95,7 +95,7 @@ A curated list of awesome Java frameworks, libraries and software. Inspired by o
 *Frameworks that help to create parsers, interpreters or compilers.*
 
 * [ANTLR](http://www.antlr.org/) - Complex full-featured framework for top-down parsing.
-* [JavaCC](https://javacc.java.net/) - More specific and slightly easier to learn. Has syntactic lookahead.
+* [JavaCC](https://javacc.github.io/javacc/) - More specific and slightly easier to learn. Has syntactic lookahead.
 
 ## Configuration
 
